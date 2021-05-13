@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/dycalendar.css">    
+    <link rel="stylesheet" href="js/dycalendar.js">    
+    <title>Calendario Dinamico</title>
+</head>
+<body>
+
+    <section>
+        <div class="box">
+            <div class="container">
+                <div id="dycalendar"></div>
+            </div>
+        </div>
+    </section>
+    <script src="js/dycalendar.js"></script>
+    <script>
+        dycalendar.draw ({
+            target: '#dycalendar',
+            type: 'month',
+            dayformat: 'full',
+            monthformat: 'full',
+            highlighttargetdate: true,
+            prevnextbutton: 'show',
+
+        })
+    </script>
+    
+</body>
+</html>
